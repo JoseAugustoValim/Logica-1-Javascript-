@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function printf(impressao) {
+        document.write(impressao);
+        pulaLinha();
+    }
+    //fazer cast no prompt
+    var vitorias = parseInt(prompt("Entre com o numero de vitorias:"));
+    var empates = parseInt(prompt("Entre com o numero de empates:"));
+    //o prompt sempre converte o resultado em string
+    var pontos = (vitorias ) + empates;
+
+    printf(pontos);
+
+    if(pontos > 28){
+        printf("Seu time esta melhor que o ano passado")
+    }
+    if(pontos < 28){
+        printf("Seu time esta pior que o ano passado")
+    }
+    if(pontos == 28){
+        printf("Seu time esta igual que o ano passado")
+    }
+
+</script>
