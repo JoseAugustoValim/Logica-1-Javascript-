@@ -1,0 +1,23 @@
+<meta charset="UTF - 8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function print(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var limite = 30;
+
+    while (limite <= 40) {
+        if (limite == 33 || limite == 37) {
+           pulaLinha();
+        }else{
+            print(limite);
+        }
+        limite += 1;
+    }
+</script>

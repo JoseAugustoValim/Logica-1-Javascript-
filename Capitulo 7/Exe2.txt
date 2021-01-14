@@ -1,0 +1,12 @@
+<meta charset = "UTF - 8">
+<script>
+funtion pulaLinha(){
+    document.write<br>
+    document.write<br>
+}
+
+function print(frase){
+    document.white(frase);
+    pulaLinha();
+}
+</script>

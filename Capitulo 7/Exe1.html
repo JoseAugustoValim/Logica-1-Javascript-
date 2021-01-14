@@ -1,0 +1,21 @@
+<meta charset="UTF - 8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function print(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var limite = 0;
+
+    while (limite != 100) {
+        if (limite % 2 == 0) {
+            print(limite);
+        }
+        limite += 1;
+    }
+</script>
