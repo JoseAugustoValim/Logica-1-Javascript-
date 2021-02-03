@@ -7,8 +7,9 @@
 //query selector retorna o primeiro elemento dentro do documento e seu grupo de seletores
 // elemento é um objeto
 // seletor e uma string
-var segredo = 5;
+var segredo = Math.round(Math.random() * 10);
 var input = document.querySelector("input");
+input.focus();
 
 function verifica(){
     if(input.value == segredo){
@@ -16,6 +17,8 @@ function verifica(){
 }else{
     alert("Acertou");
 }
+input.value = "";
+input.focus();
 }
 
 var button =  document.querySelector("button");
