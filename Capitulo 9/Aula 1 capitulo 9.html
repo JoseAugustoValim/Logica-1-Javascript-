@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<input />
+<button> Compare com o meu segredo </button>
+
+<script>
+
+    //query selector retorna o primeiro elemento dentro do documento e seu grupo de seletores
+    // elemento é um objeto
+    // seletor e uma string
+    var segredos = [1, 2, 3, 4, 5];
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+        var achou = false;
+        for (var i = 0; i < segredos.lenght; i++) {
+            if (input.value == segredos[i]) {
+                alert("Acertou");
+                achou = true;
+                break;
+            } 
+        }
+
+        if(achou == false){
+            alert("Você errou !");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>

@@ -1,23 +1,27 @@
 <meta charset="UTF-8">
 <input/>
-<button> Compare com o meu segredo </button>
+<input name = "input2">
+<button name = "button1"> testar </button>
+
 
 <script>
 
 //query selector retorna o primeiro elemento dentro do documento e seu grupo de seletores
 // elemento é um objeto
 // seletor e uma string
-var segredo = Math.round(Math.random() * 10);
+//var segredo = Math.round(Math.random() * 10);
 var input = document.querySelector("input");
+var input2 = document.querySelector("input2");
 input.focus();
 
 function verifica(){
-    if(input.value == segredo){
+    if(input.value == input2.value){
     alert("Acertou");
 }else{
     alert("Errou");
 }
 input.value = "";
+
 input.focus();
 }
 
